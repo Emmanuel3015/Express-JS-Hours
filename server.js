@@ -5,7 +5,7 @@ import path from "path";
 const app = express();
 const port = 3000;
 
-// Calculate directory path
+// Directory path
 const __fileName = fileURLToPath(import.meta.url);
 const __dirName = path.dirname(__fileName);
 
@@ -15,6 +15,7 @@ app.use((req, res, next) => {
   const day = now.getDay();
   const hour = now.getHours();
 
+  // Check for working Days
   if (day >= 1 && day <= 5 && hour >= 9 && hour < 17) {
     next();
   } else {
