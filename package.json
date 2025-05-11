@@ -1,0 +1,14 @@
+{
+  "name": "working-hours-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "express": "^4.21.2",
+    "tailwindcss": "^4.1.6"
+  }
+}
