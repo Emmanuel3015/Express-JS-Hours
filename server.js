@@ -25,13 +25,13 @@ app.use((req, res, next) => {
 
 // Routes
 app.get("/home", (req, res) =>
-  res.sendFile(path.join(__dirName, "public", "/home"))
+  res.sendFile(path.join(__dirName, "public", "/index.html"))
 );
 app.get("/services", (req, res) =>
-  res.sendFile(path.join(__dirName, "public", "/services"))
+  res.sendFile(path.join(__dirName, "public", "/services.html"))
 );
 app.get("/contact", (req, res) =>
-  res.sendFile(path.join(__dirName, "public", "/contact"))
+  res.sendFile(path.join(__dirName, "public", "/contact.html"))
 );
 
 // Static files
